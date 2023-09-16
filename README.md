@@ -7,10 +7,6 @@ This repository contains the codebase for predicting house prices using machine 
 ## Table of Contents
 - [Dataset](#dataset)
 - [Setup and Installation](#setup-and-installation)
-- [Usage](#usage)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Dataset
 The project uses two primary datasets:
@@ -23,4 +19,3 @@ The project uses two primary datasets:
    ```bash
    git clone https://github.com/IshmaelAsabere/house-price-prediction.git
    cd house-price-prediction
-
