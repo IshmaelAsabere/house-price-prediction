@@ -1,0 +1,60 @@
+# Create Env
+conda create --name production_ml python=3.9
+
+# Activate 
+conda activate production_ml
+
+# List environments
+conda env list
+conda info --envs
+
+# Remove ENV
+conda env remove --name production_ml
+
+
+
+
+
+
+# Install requirement library
+pip install -r requirements.txt
+pip install -r test_requirements.txt
+pip install -r typing_requirements.txt
+
+
+pip install -r requirements/requirements.txt
+pip install -r requirements/test_requirements.txt
+pip install -r requirements/typing_requirements.txt
+
+
+pip install ipywidgets mock nose notebook requests
+
+
+
+# Check Tox version
+pip install tox
+tox --version
+
+# tox 3
+tox -e train
+tox -e run
+ 
+# tox 4
+tox run -e train
+tox run -e run
+ 
+
+# recreate the virtual environments from
+# Once you've tested the configurations and everything is working as expected, you might want to clean up the virtual environments created by tox. To do this:
+tox -r
+
+
+
+
+pip install jupyterlab
+pip show jupyterlab
+
+
+# Packaging
+py -m pip install --upgrade build
+py -m build
