@@ -1,0 +1,42 @@
+name: train
+run_id: install_deps
+env COMSPEC: C:\Windows\system32\cmd.exe
+env NUMBER_OF_PROCESSORS: 4
+env PATHEXT: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+env PROCESSOR_ARCHITECTURE: AMD64
+env PROGRAMDATA: C:\ProgramData
+env PROGRAMFILES: C:\Program Files
+env PROGRAMFILES(X86): C:\Program Files (x86)
+env SSL_CERT_FILE: C:\Users\ishma\anaconda3\envs\production_ml\Library\ssl\cacert.pem
+env SYSTEMDRIVE: C:
+env SYSTEMROOT: C:\Windows
+env TEMP: C:\Users\ishma\AppData\Local\Temp
+env TMP: C:\Users\ishma\AppData\Local\Temp
+env USERPROFILE: C:\Users\ishma
+env PATH: C:\Users\ishma\Dev_Workspace\production-model-package\.tox\test_package\Scripts;C:\Users\ishma\anaconda3\envs\production_ml;C:\Users\ishma\anaconda3\envs\production_ml\Library\mingw-w64\bin;C:\Users\ishma\anaconda3\envs\production_ml\Library\usr\bin;C:\Users\ishma\anaconda3\envs\production_ml\Library\bin;C:\Users\ishma\anaconda3\envs\production_ml\Scripts;C:\Users\ishma\anaconda3\envs\production_ml\bin;C:\Users\ishma\anaconda3\condabin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts;C:\Python311;C:\Program Files\Addinsoft\XLSTAT;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Python310\Scripts;C:\Python310;C:\Program Files\Microsoft MPI\Bin;C:\Program Files\Common Files\Oracle\Java\javapath;c:\Program Files (x86)\Intel\TXE Components\TCS;c:\Program Files\Intel\TXE Components\TCS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\HP\Common\HPDestPlgIn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\150\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn;C:\Program Files\Azure Data Studio\bin;C:\Program Files\dotnet;C:\sqlite;C:\Program Files\Pandoc;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files;C:\Program Files\Filestar;C:\ProgramData\Filestar\aliases;C:\Users\ishma\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_202\bin;C:\Users\ishma\AppData\Local\Programs\Quarto\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\ishma\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\ishma\AppData\Local\Programs\Python\Python39;C:\Users\ishma\AppData\Local\Microsoft\WindowsApps;C:\Users\ishma\AppData\Local\GitHubDesktop\bin;C:\Users\ishma\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ishma\AppData\Local\Programs\MiKTeX\miktex\bin\x64;C:\Users\ishma\.dotnet\tools;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2023.1.2\bin;C:\Program Files\PostgreSQL\14\bin;C:\Program Files\JetBrains\DataSpell 2023.1\bin;C:\Users\ishma\AppData\Roaming\Python\Python311\Scripts;C:\Program Files\JetBrains\PyCharm 2023.1.4\bin;.
+env PIP_DISABLE_PIP_VERSION_CHECK: 1
+env PYTHONIOENCODING: utf-8
+env PYTHONPATH: .
+env PYTHONHASHSEED: 0
+env TOX_ENV_NAME: train
+env TOX_WORK_DIR: C:\Users\ishma\Dev_Workspace\production-model-package\.tox
+env TOX_ENV_DIR: C:\Users\ishma\Dev_Workspace\production-model-package\.tox\test_package
+env VIRTUAL_ENV: C:\Users\ishma\Dev_Workspace\production-model-package\.tox\test_package
+env COLUMNS: 168
+env LINES: 44
+metadata pid: 20456
+cwd: C:\Users\ishma\Dev_Workspace\production-model-package
+allow: C:\Users\ishma\Dev_Workspace\production-model-package\.tox\test_package\Scripts\*:train
+cmd: pip install -r C:\Users\ishma\Dev_Workspace\production-model-package/requirements/test_requirements.txt
+exit_code: 1
+Could not fetch URL https://pypi.org/simple/numpy/: There was a problem confirming the ssl certificate: HTTPSConnectionPool(host='pypi.org', port=443): Max retries exceeded with url: /simple/numpy/ (Caused by SSLError("Can't connect to HTTPS URL because the SSL module is not available.")) - skipping
+
+standard error:
+WARNING: pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available.
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError("Can't connect to HTTPS URL because the SSL module is not available.")': /simple/numpy/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError("Can't connect to HTTPS URL because the SSL module is not available.")': /simple/numpy/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError("Can't connect to HTTPS URL because the SSL module is not available.")': /simple/numpy/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError("Can't connect to HTTPS URL because the SSL module is not available.")': /simple/numpy/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError("Can't connect to HTTPS URL because the SSL module is not available.")': /simple/numpy/
+ERROR: Could not find a version that satisfies the requirement numpy<2.0.0,>=1.21.0 (from versions: none)
+ERROR: No matching distribution found for numpy<2.0.0,>=1.21.0
